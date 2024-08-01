@@ -1,4 +1,8 @@
-* {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* * {
   box-sizing: border-box;
   min-width: 0;
 }
@@ -16,4 +20,4 @@ h4 {
 
 p {
   text-wrap: pretty;
-}
+} */
