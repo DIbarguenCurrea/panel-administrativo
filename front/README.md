@@ -6,3 +6,4 @@ Una interfaz de usuario dinámica e interactiva para gestionar datos, con compon
 
 - React + Vite
 - Tailwind CSS
+- Javascript
