@@ -1,13 +1,7 @@
-import { useState } from "react";
 import "./ButtonBurger.css";
 
-function ButtonBurger() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleClick = () => {
-    setIsOpen(!isOpen);
-  };
-
+// eslint-disable-next-line react/prop-types
+function ButtonBurger({ isOpen, handleClick }) {
   return (
     <div className="m-2" onClick={handleClick}>
       <div className={`hamburger ${isOpen ? "is-active" : ""}`}>
