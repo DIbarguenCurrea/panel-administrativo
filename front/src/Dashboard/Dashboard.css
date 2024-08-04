@@ -1,0 +1,20 @@
+.layout {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: auto 1fr 1fr;
+  grid-template-areas:
+    "sidebar body body"
+    "sidebar body body"
+    "sidebar Footer Footer";
+  height: 100vh;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+.body {
+  grid-area: body;
+}
+.Footer {
+  grid-area: Footer;
+}

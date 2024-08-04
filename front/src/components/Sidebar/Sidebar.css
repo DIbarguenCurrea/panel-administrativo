@@ -29,3 +29,8 @@
 .open li:nth-child(5) {
   animation-delay: 4s;
 }
+
+.sidebar {
+  position: relative;
+  height: 100vh;
+}

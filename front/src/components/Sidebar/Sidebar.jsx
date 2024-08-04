@@ -10,7 +10,7 @@ function Sidebar() {
   };
 
   return (
-    <div className="fixed top-0 left-0 h-screen pt-5 m-0 border-gray-600 rounded-lg shadow-lg shadow-slate-600 ">
+    <div className="relative top-0 left-0 h-screen pt-5 mr-5 border-gray-600 rounded-lg shadow-lg shadow-slate-600 ">
       <div className="flex m-0 ">
         <ButtonBurger isOpen={isOpen} handleClick={handleClick} />
         {isOpen && (
@@ -18,7 +18,7 @@ function Sidebar() {
         )}
       </div>
       {isOpen ? (
-        <div className="open">
+        <div className="open ">
           <ul className="p-0 m-2 text-md">
             <li className="p-2 mb-2 ml-2 font-semibold cursor-pointer hover:bg-blue-50 hover:rounded-md ">
               Home
