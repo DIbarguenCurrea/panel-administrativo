@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Sidebar.css";
 import ButtonBurger from "../ButtonBurger/ButtonBurger";
 
 function Sidebar() {
@@ -12,30 +13,32 @@ function Sidebar() {
     <div className="fixed top-0 left-0 h-screen pt-5 m-0 border-gray-600 rounded-lg shadow-lg shadow-slate-600 ">
       <div className="flex m-0 ">
         <ButtonBurger isOpen={isOpen} handleClick={handleClick} />
-        {isOpen && <h1 className="p-0 mr-4 text-4xl font-bold">Dashboard</h1>}
+        {isOpen && (
+          <h1 className="p-0 mr-4 text-3xl font-semibold ">Dashboard</h1>
+        )}
       </div>
       {isOpen ? (
-        <div>
-          <ul className="p-0 m-2 text-lg">
-            <li className="p-2 mb-2 font-semibold cursor-pointer text-start hover:bg-blue-50">
+        <div className="open">
+          <ul className="p-0 m-2 text-md">
+            <li className="p-2 mb-2 ml-2 font-semibold cursor-pointer hover:bg-blue-50 hover:rounded-md ">
               Home
             </li>
-            <li className="p-2 mb-2 font-semibold cursor-pointer text-start hover:bg-blue-50">
+            <li className="p-2 mb-2 ml-4 font-semibold cursor-pointer hover:bg-blue-50 hover:rounded-md ">
               Invoice
             </li>
-            <li className="p-2 mb-2 font-semibold cursor-pointer text-start hover:bg-blue-50">
+            <li className="p-2 mb-2 ml-6 font-semibold cursor-pointer hover:bg-blue-50 hover:rounded-md ">
               Contacts
             </li>
-            <li className="p-2 mb-2 font-semibold cursor-pointer text-start hover:bg-blue-50">
+            <li className="p-2 mb-2 ml-8 font-semibold cursor-pointer hover:bg-blue-50 hover:rounded-md ">
               Messages
             </li>
-            <li className="p-2 mb-2 font-semibold cursor-pointer text-start hover:bg-blue-50">
+            <li className="p-2 mb-2 ml-5 font-semibold cursor-pointer hover:bg-blue-50 hover:rounded-md ">
               Log Out
             </li>
           </ul>
         </div>
       ) : (
-        <div>
+        <div className="open">
           <ul className="p-0 m-2 text-lg">
             <li>
               <img
@@ -64,7 +67,7 @@ function Sidebar() {
                 alt="messages"
                 className="w-8 h-8 mb-4 transition-transform duration-300 ease-in-out cursor-pointer hover:scale-125"
               />
-            </li>{" "}
+            </li>
             <li>
               <img
                 src="https://cdn0.iconfinder.com/data/icons/user-interface-2063/24/UI_Essential_icon_expanded-57-256.png"

@@ -1,0 +1,31 @@
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.open li {
+  opacity: 0;
+  animation: slideIn 1s forwards;
+}
+
+.open li:nth-child(1) {
+  animation-delay: 0s;
+}
+.open li:nth-child(2) {
+  animation-delay: 1s;
+}
+.open li:nth-child(3) {
+  animation-delay: 2s;
+}
+.open li:nth-child(4) {
+  animation-delay: 3s;
+}
+.open li:nth-child(5) {
+  animation-delay: 4s;
+}
