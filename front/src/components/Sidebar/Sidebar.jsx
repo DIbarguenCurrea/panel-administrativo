@@ -7,13 +7,14 @@ function Sidebar() {
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
+
   return (
-    <div className="fixed top-0 left-0 h-screen pt-5 m-0 border-gray-600 rounded-lg shadow-[0_45px_90px_-25px_rgba(0,0,0,0.9)] ">
+    <div className="fixed top-0 left-0 h-screen pt-5 m-0 border-gray-600 rounded-lg shadow-lg shadow-slate-600 ">
       <div className="flex m-0 ">
         <ButtonBurger isOpen={isOpen} handleClick={handleClick} />
-        {isOpen && <h1 className="p-0 mr-2 text-4xl font-bold">Dashboard</h1>}
+        {isOpen && <h1 className="p-0 mr-4 text-4xl font-bold">Dashboard</h1>}
       </div>
-      {isOpen && (
+      {isOpen ? (
         <div>
           <ul className="p-0 m-2 text-lg">
             <li className="p-2 mb-2 font-semibold cursor-pointer text-start hover:bg-blue-50">
@@ -26,12 +27,52 @@ function Sidebar() {
               Contacts
             </li>
             <li className="p-2 mb-2 font-semibold cursor-pointer text-start hover:bg-blue-50">
-              Message
+              Messages
+            </li>
+            <li className="p-2 mb-2 font-semibold cursor-pointer text-start hover:bg-blue-50">
+              Log Out
             </li>
           </ul>
-          <div className="flex m-2">
-            <h4 className="">Log Out</h4>
-          </div>
+        </div>
+      ) : (
+        <div>
+          <ul className="p-0 m-2 text-lg">
+            <li>
+              <img
+                src="https://cdn1.iconfinder.com/data/icons/jumpicon-basic-ui-glyph-1/32/-_Home-House--512.png"
+                alt="home"
+                className="w-8 h-8 mb-4 transition-transform duration-300 ease-in-out cursor-pointer hover:scale-125"
+              />
+            </li>
+            <li>
+              <img
+                src="https://cdn3.iconfinder.com/data/icons/font-awesome-solid/512/file-invoice-dollar-256.png"
+                alt="invoices"
+                className="w-8 h-8 mb-4 transition-transform duration-300 ease-in-out cursor-pointer hover:scale-125"
+              />
+            </li>
+            <li>
+              <img
+                src="https://cdn3.iconfinder.com/data/icons/remixicon-document/24/contacts-book-2-fill-256.png"
+                alt="contacts"
+                className="w-8 h-8 mb-4 transition-transform duration-300 ease-in-out cursor-pointer hover:scale-125"
+              />
+            </li>
+            <li>
+              <img
+                src="https://cdn4.iconfinder.com/data/icons/glyphs/24/icons_email-256.png"
+                alt="messages"
+                className="w-8 h-8 mb-4 transition-transform duration-300 ease-in-out cursor-pointer hover:scale-125"
+              />
+            </li>{" "}
+            <li>
+              <img
+                src="https://cdn0.iconfinder.com/data/icons/user-interface-2063/24/UI_Essential_icon_expanded-57-256.png"
+                alt="logout"
+                className="w-8 h-8 mb-4 transition-transform duration-300 ease-in-out cursor-pointer hover:scale-125"
+              />
+            </li>
+          </ul>
         </div>
       )}
     </div>
