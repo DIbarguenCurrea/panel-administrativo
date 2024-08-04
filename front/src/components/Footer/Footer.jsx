@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <div className="text-center bg-white ">
-      <p>Footer Content</p>
+      <p>Dashboard &copy; 2024. All Rights Reserved</p>
     </div>
   );
 }
