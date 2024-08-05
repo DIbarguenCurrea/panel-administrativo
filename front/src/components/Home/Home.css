@@ -1,0 +1,23 @@
+.container {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: auto 1fr 1fr;
+  grid-template-areas:
+    "profile invoices contacts"
+    "messages messages contacts"
+    "messages messages contacts";
+  height: 100vh;
+}
+
+.profile {
+  grid-area: profile;
+}
+.invoices {
+  grid-area: invoices;
+}
+.contacts {
+  grid-area: contacts;
+}
+.messages {
+  grid-area: messages;
+}
