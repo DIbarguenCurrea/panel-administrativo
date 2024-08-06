@@ -1,0 +1,29 @@
+.invoicesContainer {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "totalInvoices pendingInvoices"
+    "totalEarnings totalEarnings";
+  gap: 12px;
+  height: 270px;
+}
+
+.totalInvoices {
+  grid-area: totalInvoices;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px;
+}
+.pendingInvoices {
+  grid-area: pendingInvoices;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px;
+}
+.totalEarnings {
+  grid-area: totalEarnings;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px;
+}

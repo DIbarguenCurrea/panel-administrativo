@@ -1,13 +1,16 @@
-import "./Profile.css";
-
 function Profile() {
   return (
-    <div className="flex flex-col">
-      <div>Photo</div>
-      <div>Firts Name</div>
-      <div>Last Name</div>
-      <div>Type User</div>
-    </div>
+    <section className="flex flex-col w-[450px] border border-red-500 h-[270px]">
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
+        alt="photo"
+        className="mx-auto mt-10 rounded-full w-28 h-28"
+      />
+      <div className="flex flex-col items-center justify-center gap-4 pt-10">
+        <div className="text-3xl text-bold">Jhon Doe</div>
+        <div className="text-xl text-semibold">Front-end Developer</div>
+      </div>
+    </section>
   );
 }
 

@@ -6,6 +6,7 @@
     "profile invoices contacts"
     "messages messages contacts"
     "messages messages contacts";
+  gap: 12px;
   height: 100vh;
 }
 
