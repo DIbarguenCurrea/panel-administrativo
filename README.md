@@ -1,9 +1,10 @@
 # Panel Administrativo
 
-Una interfaz de usuario dinámica e interactiva para gestionar datos, con componentes reutilizables y un estado global.
+Creacion de un Dashboard, solo del lado del Front-end para vializacion e interacciones.
 
 ## Herramientas Utilizadas
 
 - React + Vite
 - Tailwind CSS
+- CSS
 - Javascript
