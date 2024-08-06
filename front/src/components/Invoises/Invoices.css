@@ -11,19 +11,22 @@
 
 .totalInvoices {
   grid-area: totalInvoices;
-  border: 1px solid black;
+  border: 1px solid rgb(216, 214, 214);
   border-radius: 15px;
   padding: 10px;
+  box-shadow: 4px 3px 3px rgb(184, 176, 176);
 }
 .pendingInvoices {
   grid-area: pendingInvoices;
-  border: 1px solid black;
+  border: 1px solid rgb(216, 214, 214);
   border-radius: 15px;
   padding: 10px;
+  box-shadow: 4px 3px 3px rgb(184, 176, 176);
 }
 .totalEarnings {
   grid-area: totalEarnings;
-  border: 1px solid black;
+  border: 1px solid rgb(216, 214, 214);
   border-radius: 15px;
   padding: 10px;
+  box-shadow: 4px 3px 3px rgb(184, 176, 176);
 }

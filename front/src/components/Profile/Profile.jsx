@@ -1,6 +1,6 @@
 function Profile() {
   return (
-    <section className="flex flex-col w-[450px] border border-red-500 h-[270px]">
+    <section className="flex flex-col w-[450px] h-[270px]">
       <img
         src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
         alt="photo"
