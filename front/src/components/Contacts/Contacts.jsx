@@ -19,7 +19,7 @@ function Contacts() {
 
   return (
     <section className="contactContainer">
-      <h4>Contacts</h4>
+      <h4 className="text-3xl font-semibold">Contacts</h4>
       <div className="searchBar">
         <input
           type="search"

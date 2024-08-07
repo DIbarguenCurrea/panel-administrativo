@@ -1,7 +1,8 @@
+import "./Messages.css";
 function Messages() {
   return (
-    <div>
-      <h1>Mensajes</h1>
+    <div className="messagesContainer">
+      <h1 className="text-3xl font-semibold ">Mensajes</h1>
 
       <div>Mostrar mensajes</div>
     </div>
