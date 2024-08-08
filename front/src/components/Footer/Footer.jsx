@@ -1,6 +1,7 @@
+import "./Footer.css";
 function Footer() {
   return (
-    <div className="text-center bg-white ">
+    <div className="footer">
       <p>Dashboard &copy; 2024. All Rights Reserved</p>
     </div>
   );

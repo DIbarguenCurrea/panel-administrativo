@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Sidebar.css";
 import ButtonBurger from "../ButtonBurger/ButtonBurger";
+import Footer from "../Footer/Footer";
 
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -76,6 +77,11 @@ function Sidebar() {
               />
             </li>
           </ul>
+        </div>
+      )}
+      {isOpen && (
+        <div className="footer-container">
+          <Footer />
         </div>
       )}
     </div>

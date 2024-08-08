@@ -1,7 +1,6 @@
 import "./Dashboard.css";
 import Home from "../components/Home/Home";
 import Sidebar from "../components/Sidebar/Sidebar";
-import Footer from "../components/Footer/Footer";
 
 function Dashboard() {
   return (
@@ -11,9 +10,6 @@ function Dashboard() {
       </div>
       <div className="body">
         <Home />
-      </div>
-      <div className="Footer">
-        <Footer />
       </div>
     </section>
   );
